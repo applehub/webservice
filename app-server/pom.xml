@@ -13,11 +13,6 @@
     <dependencies>
         <dependency>
             <groupId>cn.wolfcode.rpc</groupId>
-            <artifactId>rpc-server</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.wolfcode.rpc</groupId>
             <artifactId>app-common</artifactId>
             <version>1.0.0</version>
         </dependency>

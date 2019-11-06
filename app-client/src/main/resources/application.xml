@@ -11,12 +11,5 @@
 
     <context:property-placeholder location="classpath:rpc.properties"/>
 
-    <bean id="serviceRpcDiscover" class="cn.wolfcode.rpc.register.RpcDiscover">
-        <constructor-arg name="registryAddress" value="${registry.address}"/>
-    </bean>
-
-    <bean id="rpcProxy" class="cn.wolfcode.rpc.client.RpcProxy">
-        <property name="rpcDiscover" ref="serviceRpcDiscover"/>
-    </bean>
 
 </beans>
