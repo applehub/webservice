@@ -7,15 +7,8 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="cn.wolfcode.app.server"/>
+    <context:component-scan base-package="com.hikvision.webservice"/>
 
     <context:property-placeholder location="classpath:rpc.properties"/>
 
-    <bean id="serviceRegistry" class="cn.wolfcode.rpc.register.RpcRegistry">
-        <property name="registryAddress" value="${registry.address}"/>
-    </bean>
-    <bean id="rpcServer" class="cn.wolfcode.rpc.server.RpcServer">
-        <property name="serverAddress" value="${server.address}"/>
-        <property name="rpcRegistry" ref="serviceRegistry"/>
-    </bean>
 </beans>
